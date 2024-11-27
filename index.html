@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Thanksgiving</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="script.js" type="text/javascript" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-md navbar-light fixed-top" id="navbar">
+    <div class="container px-4 px-lg-5">
+        <a class="navbar-brand" href="#">
+            <img src="images/navbar-removebg-preview (1).png" class="img-fluid" alt="Navbar Logo">
+        </a>
+        <button class="navbar-toggler navbar-toggler-right" data-bs-toggle="collapse" data-bs-target="#navbarcollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarcollapse">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#header">Thanksgiving</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#sect1">History</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#sect2">Today</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#sect3">Foods</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="scrollspy" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70" tabindex="0">
+
+    <header class="head" id="header">
+        <div class="set">
+                <div><img src="images/leaves1.png"></div>
+                <div><img src="images/leaves2.png"></div>
+                <div><img src="images/leaves3.png"></div>
+                <div><img src="images/leaves4.png"></div>
+                <div><img src="images/leaves1.png"></div>
+                <div><img src="images/leaves2.png"></div>
+                <div><img src="images/leaves3.png"></div>
+                <div><img src="images/leaves4.png"></div>
+            </div>
+        <div class="text">
+            <h1>This is a page all about Thanksgiving!</h1>
+            <p>On this page, we will be talking about the history of thanksgiving, how we celebrate it now, and even what we eat!</p>
+        </div>
+    </header>
+
+<section class="black"></section>
+    
+    <section class="sect1" id="sect1">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 textsec1">
+                <h3>Thanksgiving is a holiday with roots in both Native American and European traditions. The most commonly referenced origin is the 1621 feast at Plymouth, where English Pilgrims and the Wampanoag people shared a harvest meal. This event is often considered the "First Thanksgiving," though the Pilgrims were motivated by a desire to give thanks for a successful harvest, which they believed was aided by the Wampanoag's assistance in farming techniques.</h3>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <img class="pilgrim" src="images/pngtree-happy-thanksgiving-people-in-pilgrim.png" alt="Thanksgiving Image">
+            </div>
+        </div>
+    </section>
+
+    <section class="black"></section>
+    
+    <section class="sect2" id="sect2">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 ">
+                <img class="pilgrim" src="images/holiday-turkey.avif" alt="Thanksgiving Image">
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 textsec1">
+                <h3>Today, Thanksgiving is celebrated primarily in the United States as a time for family and friends to gather and give thanks for their blessings. The holiday is marked by a large meal, typically featuring roast turkey, stuffing, mashed potatoes, cranberry sauce, and pumpkin pie, among other dishes. Many people watch the Macy's Thanksgiving Day Parade, which has become a tradition since 1924, and enjoy football games, both college and professional.</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="black"></section>
+
+    <section class="sect3" id="sect3">
+        <div class="text">
+            <h1>This button will show you what you will eat during Thanksgiving!</h1>
+           <button id="askButton">Find out what food you'll get!</button>
+           <div id="output"></div>
+        </div>
+    </section>

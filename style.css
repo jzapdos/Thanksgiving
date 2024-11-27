@@ -1,0 +1,302 @@
+@import
+url('https://fonts.googleapis.com/css?family=Bungee');
+
+:root {
+    --highlight: #af7a17;
+    --font: #141414;
+    --white: #fff;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+* {
+    font-family: 'Open-sans', sans-serif;
+    font-weight: bold;
+}
+
+body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    margin: 0; /* Ensure there's no default body margin */
+}
+
+.page-section {
+    scroll-margin-top: 53px;
+}
+
+#navbar {
+    transition: 0.3s ease;
+}
+
+#navbar img {
+    height: 50px;
+}
+
+button.navbar-toggler {
+    border: none;
+    box-shadow: none;
+}
+
+.nav-link.active {
+    color: var(--highlight);
+}
+
+.nav-link:hover {
+    color: var(--highlight);
+}
+
+#navbar ul {
+    text-align: center;
+}
+
+.navbar.scrolled {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+#header {
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    background: linear-gradient(to right, #af7a17, #c4a05d);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative; 
+    overflow: hidden; 
+}
+
+header .set {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+header .set div {
+    position: absolute;
+    display: block;
+}
+
+header .set div:nth-child(1) {
+    left: 20%;
+    animation: animate 15s linear infinite;
+    animation-delay: -7%;
+}
+
+header .set div:nth-child(2) {
+    left: 50%;
+    animation: animate 20s linear infinite;
+    animation-delay: -5%;
+}
+
+header .set div:nth-child(3) {
+    left: 70%;
+    animation: animate 20s linear infinite;
+    animation-delay: 0%;
+}
+
+header .set div:nth-child(4) {
+    left: 0%;
+    animation: animate 15s linear infinite;
+    animation-delay: 0%;
+}
+
+header .set div:nth-child(5) {
+    left: 85%;
+    animation: animate 18s linear infinite;
+    animation-delay: -10%;
+}
+
+header .set div:nth-child(6) {
+    left: 0%;
+    animation: animate 12s linear infinite;
+}
+
+header .set div:nth-child(7) {
+    left: 15%;
+    animation: animate 14s linear infinite;
+}
+
+header .set div:nth-child(8) {
+    left: 60%;
+    animation: animate 15s linear infinite;
+}
+
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        top: -10%;
+        transform: translateX(-20px) rotate(0deg);
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    20% {
+        transform: translateX(-20px) rotate(45deg);
+    }
+
+    40% {
+        transform: translateX(-20px) rotate(90deg);
+    }
+
+    60% {
+        transform: translateX(-20px) rotate(180deg);
+    }
+
+    80% {
+        transform: translateX(-20px) rotate(180deg);
+    }
+
+    100% {
+        top: 110%;
+        transform: translateX(-20px) rotate(225deg);
+    }
+}
+
+#header .text {
+    max-width: 800px; /* Optional: to prevent text from stretching too wide */
+}
+
+#header .text h1 {
+    margin-top: 0;
+    font-size: 3rem; /* Adjust for better readability */
+}
+
+#header .text p {
+    margin-top: 0;
+    font-size: 1.2rem; /* Adjust text size */
+}
+
+.black{
+    background-color: black;
+    height:10px;
+}
+
+#sect1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to left, brown, #c4a05d);
+}
+.sect1 .row {
+     display: flex;
+     align-items: center;
+    justify-content: center; /* Ensure columns are centered */
+    width: 100%;
+}
+
+.sect1 .col-lg-6,
+.sect1 .col-md-6,
+.sect1 .col-sm-12 {
+     display: flex;
+     justify-content: center; /* Center content horizontally */
+     align-items: center; /* Center content vertically */
+     text-align: center; /* Ensure text is centered inside the column */
+}
+    
+    /* Text in the first column */
+    .textsec1 h3 {
+        font-size: 1.5rem;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    
+    /* Image in #sect1 */
+    .sect1 img {
+        max-width: 100%; /* Ensure the image does not overflow */
+        height: 500px; /* Maintain aspect ratio */
+        border-radius: 10px; /* Optional: add a border radius for style */
+    }
+
+    
+#sect2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to left, rgb(247, 190, 2), #e94402);
+}
+.sect2 .row {
+     display: flex;
+     align-items: center;
+    justify-content: center; /* Ensure columns are centered */
+    width: 100%;
+}
+
+.sect2 .col-lg-6,
+.sect2 .col-md-6,
+.sect2 .col-sm-12 {
+     display: flex;
+     justify-content: center; /* Center content horizontally */
+     align-items: center; /* Center content vertically */
+     text-align: center; /* Ensure text is centered inside the column */
+}
+    
+    .textsec2 h3 {
+        font-size: 1.5rem;
+    }
+    
+    .sect2 img {
+        max-width: 100%; /* Ensure the image does not overflow */
+        height: 500px; /* Maintain aspect ratio */
+        border-radius: 10px; /* Optional: add a border radius for style */
+    }
+
+    /* Style for the button container */
+.button-container {
+    width: 100%; /* Ensure it spans the width of the section */
+    display: flex;
+    justify-content: center; /* Center the button horizontally */
+    margin-top: 20px; /* Optional: add some space above the button */
+}
+
+/* Style for the button */
+.btn-primary {
+    padding: 10px 20px; /* Adjust button size */
+    font-size: 1rem; /* Font size of the button text */
+    background-color: #af7a17; /* Set a custom background color */
+    border: none;
+    border-radius: 5px; /* Rounded corners for the button */
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #c4a05d; /* Change color on hover */
+}
+
+  
+#sect3{
+    display: flex; /* Use flexbox to center content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Ensure text is centered */
+    flex-direction: column; 
+    height: 100vh;
+    background: linear-gradient(to left, rgb(247, 92, 2), #e9e502);
+}
+
+#askButton{
+    text-align: center;
+    background-color:#775109;
+    color:var(--white)
+}
+
+#output {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top:30px;
+}
